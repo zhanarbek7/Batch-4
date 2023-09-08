@@ -3,6 +3,7 @@ package Day5;
 public class CompoundOperators {
     public static void main(String[] args) {
 
+
         int result = 15; // 15
 
         result+=result; // 30
@@ -25,4 +26,7 @@ Expected output: The difference between 15 and 8 is 7.
         int number1 = 2, number2 = 5;
         System.out.println(number1);
     }
+
+
+
 }
