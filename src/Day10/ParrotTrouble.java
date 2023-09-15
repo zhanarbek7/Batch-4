@@ -7,10 +7,7 @@ public class ParrotTrouble {
         Scanner scanner = new Scanner(System.in);
         boolean talking = scanner.nextBoolean();
         int hours = scanner.nextInt();
-        if(!talking){
-            System.out.println("GOOD PARROT");
-        }
-        else if(hours < 7 || hours > 20){
+        if(talking && hours < 7 || hours > 20){
             System.out.println("BAD PARROT");
         }
         else{
