@@ -24,7 +24,14 @@ public class TwoFactorAuthorization {
                 System.out.println("You are not authorized!");
             }
         }
-
+        else if(!email.equals(correctEmail) && !password.equals(correctPassword)){
+            System.out.println("Email is wrong");
+            System.out.println("Password is wrong");
+        }
+        else if(email.equals(correctEmail) && !password.equals(correctEmail)){
+            System.out.println("Email is correct");
+            System.out.println("Password is wrong");
+        }
         else{
             System.out.println("Email and password aren't correct");
         }
