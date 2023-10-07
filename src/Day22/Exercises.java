@@ -57,13 +57,13 @@ public class Exercises {
         System.out.println(password.length() >=10 && password.contains("@"));
     }
 
-    public static void sumUntil13(int[] integers){
+    public static void sumUntil13(int[] array){
         int sum = 0;
-        for(int i = 0; i < integers.length; i++){
-            if(integers[i] == 13){
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == 13){
                 break;
             }
-            sum+= integers[i];
+            sum+= array[i];
         }
         System.out.println(sum);
     }
