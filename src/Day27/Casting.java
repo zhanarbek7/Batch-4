@@ -2,6 +2,7 @@ package Day27;
 
 public class Casting {
     public static void main(String[] args) {
+
         // Explicit casting - casting done by programmer
         int intNumber = 5;
         byte byteNumber = (byte) intNumber;
