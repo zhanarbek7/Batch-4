@@ -21,10 +21,11 @@ public class TODOList {
             System.out.println("Which task did you finish?");
 
             int task = scanner.nextInt();
-            todoList.remove(task - 1 );
-            if(task == 0){
+            if(task == 0 || todoList.isEmpty() || task > todoList.size()) {
                 break;
             }
+
+            todoList.remove(task - 1 );
         }
 
     }
