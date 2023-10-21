@@ -14,11 +14,15 @@ public class StoreMain {
 //        fashionOutlet.inventory.add(tShirt);
         // access inventory ArrayList through method
         fashionOutlet.addItem(tShirt);
-
         fashionOutlet.addItem(pants);
         fashionOutlet.addItem(cap);
 
-        System.out.println(fashionOutlet.inventory.size());
+        fashionOutlet.displayItems();
+
+        fashionOutlet.removeById(3);
+
+        fashionOutlet.updateItemById(2, 35, 10);
+
         fashionOutlet.displayItems();
     }
 }

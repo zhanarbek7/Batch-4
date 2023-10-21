@@ -20,8 +20,6 @@ public class Item {
         System.out.println("------------------");
     }
 
-    public void helloWorld(){
-        System.out.println("Hello world");
-    }
+
 
 }
