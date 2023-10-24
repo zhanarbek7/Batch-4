@@ -32,13 +32,7 @@ public class Phonebook {
 
     public void updateContactsName(String oldName, String newName){
         //write a code which will update name of the contact
-        if(phonebook.containsKey(oldName)){
-            phonebook.replace(oldName, newName);
-            System.out.println(oldName + " was updated to "+ newName);
-        }
-        else{
-            System.out.println(oldName + " was not found!");
-        }
+
     }
 
     public void updateContactsPhoneNumber(String name, String newNumber){
@@ -130,6 +124,14 @@ public class Phonebook {
         System.out.print("Enter name: ");
         String name2 = scanner.nextLine();
         phonebook.searchForContact(name2);
+
+        phonebook.printPhoneBookMap();
+
+        System.out.print("Enter old name: ");
+        String oldName = scanner.nextLine();
+        System.out.print("Enter new name: ");
+        String newName = scanner.nextLine();
+        phonebook.updateContactsName(oldName, newName);
 
         phonebook.printPhoneBookMap();
 
