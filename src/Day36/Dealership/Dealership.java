@@ -35,9 +35,8 @@ public class Dealership {
         // TODO 1. we didn't check whether this registration number is present
         // TODO 2. we didn't check whether vehicle is available or not
         for(int i = 0; i < rentalVehicles.size(); i++){
-            Vehicle vehicle = rentalVehicles.get(i);
-            if(vehicle.registrationNumber.equals(registrationNumber)){
-                vehicle.available = true;
+            if(rentalVehicles.get(i).registrationNumber.equals(registrationNumber)){
+                rentalVehicles.get(i).available = true;
             }
         }
     }
