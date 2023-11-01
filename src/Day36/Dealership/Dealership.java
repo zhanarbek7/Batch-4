@@ -7,13 +7,40 @@ public class Dealership {
 
     public void add(Vehicle vehicle){
         // TODO 1. we don't check the registration numbers
-        rentalVehicles.add(vehicle);
-        System.out.println(vehicle.make + " was added!");
+
+        boolean isVehiclePresent = false;
+        String registrationNumberToCheck = vehicle.registrationNumber;;
+        // to check whether we have a car with the same RN
+        for(Vehicle i: rentalVehicles){
+            if(i.registrationNumber.equals(registrationNumberToCheck)){
+                isVehiclePresent = true;
+                break;
+            }
+        }
+        if(!isVehiclePresent){
+            rentalVehicles.add(vehicle);
+            System.out.println(vehicle.make + " " + vehicle.model + " was added!");
+        }
+        else{
+            System.out.println(vehicle.make + " " + vehicle.model +" RN is wrong!");
+        }
+
     }
 
     public void rent(String registrationNumber){
         // TODO 1. we didn't check whether this registration number is present
         // TODO 2. we didn't check whether vehicle is available or not
+
+        boolean isVehiclePresent = false;
+        for(Vehicle i: rentalVehicles){
+            if(i.registrationNumber.equals(registrationNumber)){
+                isVehiclePresent = true;
+                break;
+            }
+        }
+
+        System.out.println(isVehiclePresent);
+
         for(int i = 0; i < rentalVehicles.size(); i++){
             Vehicle vehicle = rentalVehicles.get(i);
             if(vehicle.registrationNumber.equals(registrationNumber)){
