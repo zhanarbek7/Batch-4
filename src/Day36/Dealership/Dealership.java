@@ -6,7 +6,6 @@ public class Dealership {
     ArrayList<Vehicle> rentalVehicles = new ArrayList<>();
 
     public void add(Vehicle vehicle){
-        // TODO 1. we don't check the registration numbers
 
         boolean isVehiclePresent = false;
         String registrationNumberToCheck = vehicle.registrationNumber;;
@@ -28,7 +27,6 @@ public class Dealership {
     }
 
     public void rent(String registrationNumber){
-        // TODO 1. we didn't check whether this registration number is present
         // TODO 2. we didn't check whether vehicle is available or not
 
         boolean isVehiclePresent = false;
