@@ -3,6 +3,7 @@ package Day42;
 public class ConstructorChaining {
 
     public ConstructorChaining(){
+        this(5);
         System.out.println("Empty constructor");
     }
 
